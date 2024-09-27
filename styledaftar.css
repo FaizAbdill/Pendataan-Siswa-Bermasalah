@@ -108,6 +108,10 @@ h1 {
     background-color: #9ab100;
 }
 
+.action-button1:hover {
+    background-color: #950000;
+}
+
 .action-button:active {
     background-color: #003f88;
 }
@@ -155,7 +159,7 @@ h1 {
 }
 
 .fa-print:hover {
-    color: #007bff;
+    color: #ffffff;
 }
 
 /* Responsivitas */

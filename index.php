@@ -1,33 +1,65 @@
-    <!DOCTYPE html>
-    <html lang="id">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pendaftaran Siswa Bermasalah</title>
-        <link rel="stylesheet" href="styleindex.css">
-    </head>
-    <body>
-        <h1>Pendaftaran Siswa Bermasalah</h1>
-        <form action="process.php" method="POST">
-            <label for="nama">Nama Lengkap:</label>
-            <input type="text" id="nama" name="nama" required>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Siswa Bermasalah</title>
+    <link rel="stylesheet" href="styleindex.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="navbar">
+    <a href="index.php" class="button-link">
+    <h2 class="animate__animated animate__bounceInDown">IZEFFECT</h2>
+</a>
+    </div>
+    <h1>PENDATAAN SISWA BERMASALAH</h1>
+    <form action="process.php" method="POST">
+        <table class="form-table">
+            <!-- Baris untuk Nama Lengkap -->
+            <tr>
+                <td><label for="nama">Nama Lengkap:</label></td>
+                <td><input type="text" id="nama" name="nama" required></td>
+            </tr>
+            <!-- Baris untuk Umur -->
+            <tr>
+                <td><label for="umur">Umur:</label></td>
+                <td><input type="number" id="umur" name="umur" required></td>
+            </tr>
+            <!-- Baris untuk Kelas -->
+            <tr>
+                <td><label for="kelas">Kelas:</label></td>
+                <td><input type="text" id="kelas" name="kelas" required></td>
+            </tr>
+            <!-- Baris untuk Alasan -->
+            <tr>
+                <td><label for="alasan">Alasan Bermasalah:</label></td>
+                <td><textarea id="alasan" name="alasan" required></textarea></td>
+            </tr>
+            <!-- Baris untuk Wali Kelas -->
+            <tr>
+                <td><label for="walikelas">Wali Kelas:</label></td>
+                <td><input type="text" id="walikelas" name="walikelas" required></td>
+            </tr>
+            <!-- Baris untuk Tombol Daftar -->
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Daftar">
+                </td>
+            </tr>
+            <!-- Baris untuk Tombol Lihat Daftar -->
+            <tr>
+                <td colspan="2">
+                    <a href="daftar.php">
+                        <button type="button">Lihat Daftar</button>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
 
-            <label for="umur">Umur:</label>
-            <input type="number" id="umur" name="umur" required>
-
-            <label for="kelas">Kelas:</label>
-            <input type="text" id="kelas" name="kelas" required>
-
-            <label for="alasan">Alasan Bermasalah:</label>
-            <textarea id="alasan" name="alasan" required></textarea>
-
-            <label for="walikelas">Wali Kelas:</label>
-            <input type="text" id="walikelas" name="walikelas" required>
-
-            <input type="submit" value="Daftar">
-            <a href="daftar.php"><button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">LIHAT DAFTAR</button></a>
-        </form>
-    </body>
-    </html>
-
-    <?php include "footer.php";?>
+<?php include "footer.php";?>

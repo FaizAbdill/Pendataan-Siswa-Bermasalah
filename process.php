@@ -61,12 +61,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="styleprocess.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <h2> Siswa Bermasalah</h2>
+    <a href="index.php" class="button-link">
+    <h2 class="animate__animated animate__bounceInDown"> IZEFFECT </h2>
+    </a>
     </div>
 
     <!-- Container utama -->
@@ -84,14 +89,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <a href="index.php"><button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Kembali</button></a>
         </div>
     </div>
-
-    <!-- Footer -->
-    <footer>
-    <p>&copy; 2024 - <a href="https://www.instagram.com/paizabdlh" target="_blank" style="color: black; text-decoration: underline;">Muhammad Faiz Abdillah TJ 25</a></p>
-    </footer>
-
-
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 </body>
 </html>
 
+<?php include "footer.php";?>

@@ -1,5 +1,36 @@
 /* STYLE.PADA.INDEX */
+.navbar {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: start;
+    position: fixed;
+    top: 0;
+    z-index: 10;   
+}
 
+/* Styling untuk membuat elemen h2 terlihat seperti tombol */
+
+.button-link h2 {
+    display: inline-block;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+
+/* Optional: Responsif untuk mobile */
+@media screen and (max-width: 600px) {
+    .button-link h2 {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+
+
+/* Styling dasar seperti sebelumnya */
 * {
     margin: 0;
     padding: 0;
@@ -12,112 +43,49 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Untuk mengatur konten ditumpuk secara vertikal */
-    min-height: 100vh; /* Agar konten memenuhi tinggi layar */
+    flex-direction: column;
+    min-height: 100vh;
     padding: 20px;
 }
 
-/* Styling for the form container */
+/* Styling untuk judul */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 30px;
+}
+
+/* Styling untuk form container */
 form {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 700px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
     width: 100%;
 }
 
-/* Title styling */
-h1 {
-    text-align: center;
-    margin-bottom: 20px; /* Tambahkan margin di bawah judul */
-    color: #0037ff;
-    font-size: 30px;
-}
-
-/* Styling untuk container tabel */
-.container {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px; /* Membatasi lebar tabel */
+/* Styling untuk tabel form */
+.form-table {
     width: 100%;
-    margin-top: 20px; /* Menambah margin atas agar tidak terlalu dekat dengan judul */
+    border-collapse: collapse;
 }
 
-/* Styling untuk tabel siswa */
-.student-table {
-    width: 100%;
-    border-collapse: collapse; /* Menghilangkan jarak antar border */
-    margin-top: 20px; /* Jarak antara tabel dengan elemen di atasnya */
+.form-table td {
+    padding: 10px;
+    vertical-align: top; /* Agar label dan input sejajar vertikal */
 }
 
-.student-table th,
-.student-table td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: left;
-    word-wrap: break-word; /* Membuat teks panjang terputus dan tetap di dalam sel */
-    max-width: 200px; /* Menentukan lebar maksimum untuk kolom, sesuaikan sesuai kebutuhan */
-    overflow: hidden; /* Menghindari teks meluber */
-    text-overflow: ellipsis; /* Menampilkan tiga titik jika teks terpotong */
-}
-
-.student-table th {
-    background-color: #f2f2f2;
-    color: #333;
-}
-
-.student-table td {
-    background-color: #fff;
-}
-
-.student-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-.student-table tr:hover {
-    background-color: #f1f1f1; /* Warna saat mouse hover */
-}
-
-/* Styling untuk tombol dan lainnya */
-.action-button {
-    margin-right: 10px; /* Jarak antara tombol aksi */
-}
-
-.back-link {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    background-color: #007bff;
-    padding: 8px 16px;
-    border-radius: 4px;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.back-link:hover {
-    background-color: #0056b3;
-}
-
-/* Styling untuk input fields and labels */
-label {
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-    display: block;
-}
-
+/* Styling untuk input fields dan textarea */
 input[type="text"], 
 input[type="number"], 
 textarea {
     width: 100%;
     padding: 10px;
-    margin: 10px 0 20px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #cccaca;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 textarea {
@@ -125,11 +93,11 @@ textarea {
     resize: none;
 }
 
-/* Submit button */
+/* Submit button styling */
 input[type="submit"] {
     width: 100%;
     padding: 15px;
-    background-color: #007BFF;
+    background-color: #11c523;
     color: white;
     border: none;
     border-radius: 5px;
@@ -139,15 +107,15 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #0ea31d;
 }
 
-/* Style for the "Lihat Daftar" button */
+/* Styling untuk tombol Lihat Daftar */
 a button {
     margin-top: 10px;
     width: 100%;
     padding: 15px;
-    background-color: #11c523;
+    background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 5px;
@@ -158,30 +126,10 @@ a button {
 }
 
 a button:hover {
-    background-color: #0ea31d;
+    background-color: #0056b3 ;
 }
 
-/* Jarak antar tombol */
-.action-button {
-    margin-bottom: 10px; /* Beri jarak kanan untuk setiap tombol */
-    text-decoration: none; /* Hilangkan garis bawah */
-    color: #007bff; /* Warna tombol, dapat disesuaikan */
-}
-
-.action-button:hover {
-    color: #0056b3; /* Warna tombol saat hover */
-}
-
-.pdflogo {
-    color: #333; /* Sesuaikan warna ikon print */
-}
-
-.pdflogo:hover {
-    color: #0056b3; /* Warna ikon saat hover */
-}
-
-
-/* Responsive design: for screens below 600px width */
+/* Responsive design untuk tampilan mobile */
 @media screen and (max-width: 600px) {
     form {
         padding: 20px;
@@ -192,4 +140,3 @@ a button:hover {
         padding: 12px;
     }
 }
-

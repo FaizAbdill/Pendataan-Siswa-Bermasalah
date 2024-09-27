@@ -29,5 +29,5 @@ body {
 </style>
 
 <div class="footer">
-    <p>&copy; 2024 - <a href="https://www.instagram.com/paizabdlh" target="_blank" style="color: black; text-decoration: underline;">Muhammad Faiz Abdillah TJ 25</a></p>
+    <p>&copy; 2024 | <a href="https://www.instagram.com/paizabdlh" target="_blank" style="color: black; text-decoration: underline;">Muhammad Faiz Abdillah TJ 25</a></p>
 </div>

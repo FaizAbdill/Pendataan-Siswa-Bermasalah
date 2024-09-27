@@ -47,7 +47,7 @@ if ($result->num_rows > 0) {
         $pdf->SetFont('Arial', '', 12);
 
         // Isi surat
-        $pdf->SetFont('Arial', '', 12);
+        $pdf->SetFont('Times', '', 12);
         $pdf->Cell(40, 10, 'Nama: ', 0, 0);
         $pdf->Cell(0, 10, $row['nama'], 0, 1);
 

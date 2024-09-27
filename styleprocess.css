@@ -7,7 +7,7 @@
 
 /* Background dan font dasar */
 body {
-    font-family: 'Poppins', sans-serif;
+    
     background-color: #f5f7fa;
     color: #333;
     min-height: 100vh; /* Tinggi minimal penuh layar */
@@ -19,10 +19,10 @@ body {
 
 /* Navbar styling */
 .navbar {
-    background-color: #0037ff;
+    background-color: #000000;
     padding: 20px;
     width: 100%;
-    text-align: center;
+    text-align: start;
     position: fixed;
     top: 0;
     z-index: 10;
@@ -33,6 +33,14 @@ body {
     font-weight: 500;
     font-size: 24px;
     margin: 0;
+}
+
+.button-link h2 {
+    display: inline-block;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+
 }
 
 /* Styling container utama */
