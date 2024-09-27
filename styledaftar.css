@@ -1,0 +1,203 @@
+/* stylee.daftar */
+
+/* Reset margin dan padding default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container utama */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px;
+}
+
+/* Header H1 */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #0037ff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Tabel styling */
+/* CSS untuk tabel */
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.student-table th, .student-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.student-table th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.action-button {
+    margin-right: 5px; /* Beri jarak antara tombol Edit dan Delete */
+    color: #007bff; /* Warna tombol */
+    text-decoration: none;
+}
+
+.action-button:hover {
+    color: #0056b3; /* Warna hover */
+}
+
+.pdflogo {
+    color: #333;
+}
+
+.pdflogo:hover {
+    color: #0056b3;
+}
+
+
+/* Styling header tabel */
+.student-table thead {
+    background-color: #0037ff;
+    color: #fff;
+}
+
+.student-table th,
+.student-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Styling pada baris ganjil dan genap */
+.student-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.student-table tr:hover {
+    background-color: #eaf4ff;
+}
+
+/* Tombol aksi styling */
+.student-table a {
+    color: #ffffff; /* Warna font tetap */
+    text-decoration: none;
+    background-color: #0037ff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 10px; /* Jarak antara tombol */
+    transition: background-color 0.3s ease;
+}
+
+.student-table a:last-child {
+    margin-right: 0; /* Agar tombol terakhir tidak memiliki margin kanan */
+}
+
+.student-table a:hover {
+    background-color: #0056b3; /* Hanya latar belakang yang berubah saat hover */
+}
+
+
+/* Pesan ketika tidak ada data */
+.no-data {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    padding: 20px 0;
+}
+
+/* Tombol kembali & print styling */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #0037ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.back-link:hover {
+    background-color: #0427a7;
+}
+
+/* Ikon font-awesome styling */
+.fa-print {
+    margin-left: 10px;
+    color: #0037ff;
+    font-size: 23px;
+    transition: color 0.3s ease;
+}
+
+.fa-print:hover {
+    color: #0056b3;
+}
+
+.pdflogo{
+    color: #f0f4f8;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+/* Responsivitas */
+    @media (max-width: 768px) {
+    .student-table th, 
+    .student-table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .back-link {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .student-table th, 
+    .student-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .back-link {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+

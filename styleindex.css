@@ -1,0 +1,195 @@
+/* STYLE.PADA.INDEX */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Untuk mengatur konten ditumpuk secara vertikal */
+    min-height: 100vh; /* Agar konten memenuhi tinggi layar */
+    padding: 20px;
+}
+
+/* Styling for the form container */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+}
+
+/* Title styling */
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Tambahkan margin di bawah judul */
+    color: #0037ff;
+    font-size: 30px;
+}
+
+/* Styling untuk container tabel */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Membatasi lebar tabel */
+    width: 100%;
+    margin-top: 20px; /* Menambah margin atas agar tidak terlalu dekat dengan judul */
+}
+
+/* Styling untuk tabel siswa */
+.student-table {
+    width: 100%;
+    border-collapse: collapse; /* Menghilangkan jarak antar border */
+    margin-top: 20px; /* Jarak antara tabel dengan elemen di atasnya */
+}
+
+.student-table th,
+.student-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    word-wrap: break-word; /* Membuat teks panjang terputus dan tetap di dalam sel */
+    max-width: 200px; /* Menentukan lebar maksimum untuk kolom, sesuaikan sesuai kebutuhan */
+    overflow: hidden; /* Menghindari teks meluber */
+    text-overflow: ellipsis; /* Menampilkan tiga titik jika teks terpotong */
+}
+
+.student-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.student-table td {
+    background-color: #fff;
+}
+
+.student-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.student-table tr:hover {
+    background-color: #f1f1f1; /* Warna saat mouse hover */
+}
+
+/* Styling untuk tombol dan lainnya */
+.action-button {
+    margin-right: 10px; /* Jarak antara tombol aksi */
+}
+
+.back-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.back-link:hover {
+    background-color: #0056b3;
+}
+
+/* Styling untuk input fields and labels */
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"], 
+input[type="number"], 
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the "Lihat Daftar" button */
+a button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+    background-color: #11c523;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+a button:hover {
+    background-color: #0ea31d;
+}
+
+/* Jarak antar tombol */
+.action-button {
+    margin-bottom: 10px; /* Beri jarak kanan untuk setiap tombol */
+    text-decoration: none; /* Hilangkan garis bawah */
+    color: #007bff; /* Warna tombol, dapat disesuaikan */
+}
+
+.action-button:hover {
+    color: #0056b3; /* Warna tombol saat hover */
+}
+
+.pdflogo {
+    color: #333; /* Sesuaikan warna ikon print */
+}
+
+.pdflogo:hover {
+    color: #0056b3; /* Warna ikon saat hover */
+}
+
+
+/* Responsive design: for screens below 600px width */
+@media screen and (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    input[type="submit"], a button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
