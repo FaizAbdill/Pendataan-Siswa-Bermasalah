@@ -57,12 +57,13 @@ $conn->close();
                             <td><?php echo htmlspecialchars(trim($row['alasan'])); ?></td>
                             <td><?php echo htmlspecialchars(trim($row['walikelas'])); ?></td>
                             <td>
-                                <a href="edit.php?id=<?php echo $row['id']; ?>" class="action-button">Edit</a> |
+                                <a href="edit.php?id=<?php echo $row['id']; ?>" class="action-button">Edit</a> 
                                 <br>
-                                <a href="delete.php?id=<?php echo $row['id']; ?>" class="action-button" onclick="return confirm('Apakah Anda yakin ingin menghapus siswa ini?');">Delete</a>
+                                <br> 
+                                <a href="delete.php?id=<?php echo $row['id']; ?>" class="action-button1" onclick="return confirm('Apakah Anda yakin ingin menghapus siswa ini?');">Delete</a>
                             </td>
                             <td>
-                                <a href="buatpdf2.php?id=<?php echo $row['id']; ?>" class="action-button back-link"><i class="fa fa-print pdflogo" style="font-size:19px"></i></a>
+                                <a href="buatpdf2.php?id=<?php echo $row['id']; ?>" class="action-button back-link"><i class="fa fa-print pdflogo" style="font-size:18px"></i></a>
                             </td>
                         </tr>
                     <?php endwhile; ?>
@@ -76,3 +77,4 @@ $conn->close();
 </body>
 </html>
 
+<?php include "footer.php";?>

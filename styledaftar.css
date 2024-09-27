@@ -1,5 +1,3 @@
-/* stylee.daftar */
-
 /* Reset margin dan padding default */
 * {
     margin: 0;
@@ -9,8 +7,9 @@
 
 /* Body styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f4f8;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -20,153 +19,147 @@ body {
 
 /* Container utama */
 .container {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    max-width: 1000px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
     width: 100%;
     margin: 20px;
+    overflow-x: auto;
 }
 
 /* Header H1 */
 h1 {
     text-align: center;
-    font-size: 28px;
-    color: #0037ff;
-    margin-bottom: 20px;
-    font-weight: bold;
+    font-size: 32px;
+    color: #343a40;
+    margin-bottom: 30px;
+    font-weight: 700;
 }
 
 /* Tabel styling */
-/* CSS untuk tabel */
 .student-table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    text-align: left;
 }
 
-.student-table th, .student-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
+.student-table th, 
+.student-table td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #dee2e6;
 }
 
 .student-table th {
-    background-color: #f2f2f2;
-    color: black;
+    background-color: #007bff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: left;
 }
 
+/* Styling untuk baris tabel */
+.student-table tr:nth-child(even) {
+    background-color: #f1f3f5;
+}
+
+.student-table tr:hover {
+    background-color: #e9ecef;
+    transition: background-color 0.3s ease;
+}
+
+.student-table td {
+    vertical-align: middle;
+}
+
+/* Tombol aksi styling */
 .action-button {
-    margin-right: 5px; /* Beri jarak antara tombol Edit dan Delete */
-    color: #007bff; /* Warna tombol */
+    display: inline-block;
+    color: #000000;
+    background-color: #ddff00;
     text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 5px 0;
+}
+.action-button1 {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #ff0000;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 5px 0;
 }
 
 .action-button:hover {
-    color: #0056b3; /* Warna hover */
+    background-color: #9ab100;
+}
+
+.action-button:active {
+    background-color: #003f88;
 }
 
 .pdflogo {
     color: #333;
+    font-size: 19px;
 }
 
 .pdflogo:hover {
     color: #0056b3;
 }
 
-
-/* Styling header tabel */
-.student-table thead {
-    background-color: #0037ff;
-    color: #fff;
-}
-
-.student-table th,
-.student-table td {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-    font-size: 16px;
-}
-
-/* Styling pada baris ganjil dan genap */
-.student-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.student-table tr:hover {
-    background-color: #eaf4ff;
-}
-
-/* Tombol aksi styling */
-.student-table a {
-    color: #ffffff; /* Warna font tetap */
-    text-decoration: none;
-    background-color: #0037ff;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-size: 14px;
-    margin-right: 10px; /* Jarak antara tombol */
-    transition: background-color 0.3s ease;
-}
-
-.student-table a:last-child {
-    margin-right: 0; /* Agar tombol terakhir tidak memiliki margin kanan */
-}
-
-.student-table a:hover {
-    background-color: #0056b3; /* Hanya latar belakang yang berubah saat hover */
-}
-
-
 /* Pesan ketika tidak ada data */
 .no-data {
     text-align: center;
     font-size: 18px;
-    color: #777;
+    color: #6c757d;
     padding: 20px 0;
 }
 
 /* Tombol kembali & print styling */
 .back-link {
     display: inline-block;
-    margin-top: 20px;
-    background-color: #0037ff;
+    background-color: #007bff;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border-radius: 5px;
     text-decoration: none;
     font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
     transition: background-color 0.3s ease;
-    text-align: center;
 }
 
 .back-link:hover {
-    background-color: #0427a7;
+    background-color: #0053ac;
 }
 
-/* Ikon font-awesome styling */
 .fa-print {
-    margin-left: 10px;
-    color: #0037ff;
-    font-size: 23px;
+    margin-left: 0;
+    color: #ffffff;
+    font-size: 24px;
     transition: color 0.3s ease;
 }
 
 .fa-print:hover {
-    color: #0056b3;
-}
-
-.pdflogo{
-    color: #f0f4f8;
-    margin-left: 10px;
-    margin-right: 10px;
-
+    color: #007bff;
 }
 
 /* Responsivitas */
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
     .student-table th, 
     .student-table td {
         font-size: 14px;
@@ -174,12 +167,12 @@ h1 {
     }
 
     h1 {
-        font-size: 22px;
+        font-size: 26px;
     }
 
     .back-link {
         font-size: 14px;
-        padding: 8px 16px;
+        padding: 10px 20px;
     }
 }
 
@@ -191,13 +184,11 @@ h1 {
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .back-link {
         font-size: 12px;
-        padding: 6px 12px;
+        padding: 8px 16px;
     }
 }
-
-

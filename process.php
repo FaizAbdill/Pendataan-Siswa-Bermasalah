@@ -46,9 +46,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Tutup koneksi setelah query selesai
     $conn->close();
 } else {
-    // Redirect ke halaman pendaftaran jika tidak ada form yang di-submit
-    header("Location: index.php");
-    exit;
+    // // Redirect ke halaman pendaftaran jika tidak ada form yang di-submit
+    // header("Location: index.php");
+    // exit;
 }
 ?>
 
@@ -86,9 +86,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 
     <!-- Footer -->
-    <div class="footer">
-    <p>&copy; 2024 - <a href="https://www.instagram.com/paizabdlh" target="_blank" style="color: white; text-decoration: underline;">Muhammad Faiz Abdillah TJ 25</a></p>
-</div>
+    <footer>
+    <p>&copy; 2024 - <a href="https://www.instagram.com/paizabdlh" target="_blank" style="color: black; text-decoration: underline;">Muhammad Faiz Abdillah TJ 25</a></p>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
