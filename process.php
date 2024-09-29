@@ -38,18 +38,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             'alasan' => $alasan,
             'walikelas' => $walikelas
         ];
-        echo "Data berhasil disimpan!";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
     // Tutup koneksi setelah query selesai
-    $conn->close();
-} else {
-    // // Redirect ke halaman pendaftaran jika tidak ada form yang di-submit
-    // header("Location: index.php");
-    // exit;
-}
+$conn->close();}
 ?>
 
 <!DOCTYPE html>
@@ -64,19 +58,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 </head>
 <body>
     <!-- Navbar -->
     <div class="navbar">
-    <a href="index.php" class="button-link">
-    <h2 class="animate__animated animate__bounceInDown"> IZEFFECT </h2>
-    </a>
+    <a href="index.php" class="button-link"><h2 class="animate__animated animate__swing">IZEFFECT</h2></a>
     </div>
 
     <!-- Container utama -->
     <div class="container">
-        <h1>Siswa Telah Terdaftar</h1>
+        <h1 class="font"> SISWA TELAH TERDAFTAR!!</h1>
         
         <p><strong>Nama Lengkap:</strong> <?php echo $_SESSION['data']['nama']; ?></p>
         <p><strong>Umur:</strong> <?php echo $_SESSION['data']['umur']; ?></p>
@@ -89,7 +81,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <a href="index.php"><button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Kembali</button></a>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 </body>
 </html>
 

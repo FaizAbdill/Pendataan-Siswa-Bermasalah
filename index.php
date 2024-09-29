@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pendaftaran Siswa Bermasalah</title>
     <link rel="stylesheet" href="styleindex.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <div class="navbar">
     <a href="index.php" class="button-link">
-    <h2 class="animate__animated animate__bounceInDown">IZEFFECT</h2>
+    <h2 class="animate__animated animate__swing">IZEFFECT</h2>
 </a>
     </div>
     <h1>PENDATAAN SISWA BERMASALAH</h1>

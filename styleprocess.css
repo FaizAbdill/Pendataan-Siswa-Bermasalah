@@ -1,28 +1,9 @@
-/* Reset padding dan margin default */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Background dan font dasar */
-body {
-    
-    background-color: #f5f7fa;
-    color: #333;
-    min-height: 100vh; /* Tinggi minimal penuh layar */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 /* Navbar styling */
 .navbar {
     background-color: #000000;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
-    text-align: start;
+    text-align: left;
     position: fixed;
     top: 0;
     z-index: 10;
@@ -42,6 +23,25 @@ body {
     transition: background-color 0.3s, transform 0.3s;
 
 }
+/* Reset padding dan margin default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background dan font dasar */
+body {
+    
+    background-color: #f5f7fa;
+    color: #333;
+    min-height: 100vh; /* Tinggi minimal penuh layar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* Styling container utama */
 .container {
@@ -59,22 +59,23 @@ body {
 }
 
 /* Header styling */
-h1 {
-    font-size: 28px;
+.font {
+    font-size: 25px;
     margin-bottom: 20px;
-    color: #0037ff;
+    color: #000000;
     font-weight: 600;
+    font-style:bold;
 }
 
 /* Paragraph styling */
 p {
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.5;
     text-align: left;
 }
 
 p strong {
-    color: #0037ff;
+    color: #000000;
 }
 
 /* Styling tombol */
@@ -84,9 +85,6 @@ p strong {
     margin-top: 20px;
 }
 
-.kembali a {
-    text-decoration: none;
-}
 
 .kembali button {
     background-color: #0037ff;
