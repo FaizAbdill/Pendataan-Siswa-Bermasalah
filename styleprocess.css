@@ -23,6 +23,24 @@
     transition: background-color 0.3s, transform 0.3s;
 
 }
+
+.logout-button {
+    position: absolute;
+    right: 20px; /* Adjust this value if needed */
+    top: 50%; /* Vertically center the icon */
+    transform: translateY(-50%);
+}
+
+.logout-button i {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+/* Optional: Add hover effect for the icon */
+.logout-button:hover i {
+    color: rgb(194, 190, 190);
+}
+
 /* Reset padding dan margin default */
 * {
     margin: 0;

@@ -10,6 +10,25 @@
     z-index: 10;   
 }
 
+/* Style for the logout button */
+.logout-button {
+    position: absolute;
+    right: 20px; /* Adjust this value if needed */
+    top: 50%; /* Vertically center the icon */
+    transform: translateY(-50%);
+}
+
+.logout-button i {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+/* Optional: Add hover effect for the icon */
+.logout-button:hover i {
+    color: rgb(194, 190, 190);
+}
+
+
 /* Styling untuk membuat elemen h2 terlihat seperti tombol */
 
 .button-link h2 {
@@ -20,6 +39,9 @@
 
 }
 
+.i{
+    position: right;
+}
 /* Optional: Responsif untuk mobile */
 @media screen and (max-width: 600px) {
     .button-link h2 {
